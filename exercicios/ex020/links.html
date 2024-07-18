@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+    <style>
+
+        /* 
+        SELETORES ESPECIAIS
+            #  = id
+            .  = classe
+            :  = pseudo-classe
+            :: = pseudo-elemento
+            >  = childen(filho)
+        */
+
+        body{
+            font-family:Arial, Helvetica, sans-serif ;
+        }
+        a{
+            color: red;
+            text-decoration: none;
+            font-family: bold;
+        }
+        a:visited{
+            color: darkred;
+        }
+        a:hover{
+            color: black;
+            text-decoration: underline;
+        }
+        a:active{
+            color: yellow;
+        }
+        .especial{
+            background-color: rgb(228, 118, 118);
+        }
+        .especial::before{
+            content: '☞ ';
+        }
+        .especial::after{
+            content: ' ☜';
+        }
+    </style>
+</head>
+<body>
+    <h1>Personalizando links</h1>
+    <ul>
+        <li><a href="https://www.flamengo.com.br" target="_blank">Site do Flamengo</a></li>
+        <li><a href="https://instagram.com/gp.kaua" target="_blank" class="especial">Conta do Instagram</a></li>
+        <li><a href="https://x.com/gkauap" target="_blank" class="especial">Conta do X</a></li>
+    </ul>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mídias em HTML5</title>
+</head>
+<body>
+    <h1>Imagem dinâmica</h1>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Id officia eum assumenda dolore aut recusandae repellendus, laborum repellat culpa explicabo fugiat consequatur accusantium debitis necessitatibus illo laudantium odio incidunt corrupti.</p>
+<!-- o primeiro está errado -->
+        <picture> 
+            <source media="(min-width: 750px)" srcset="imagens/foto-p" type="image/png">
+            <source media="(max-width: 1050px)" srcset="imagens/foto-m" type="image/png">
+            <img src="imagens/foto-g.png" alt="Imagem Fléxivel">
+        </picture>
+        
+        <picture>
+            <source media="(min-width: 1000px)" srcset="imagens/foto-g.png" type="image/png">
+            <source media="(min-width: 700px)" srcset="imagens/foto-m.png" type="image/png">
+            <img src="imagens/foto-p.png" alt="Imagem Fléxivel">
+        </picture>
+        
+    <h1>Reproduzindo Aúdio</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non laudantium eos quos? Esse, nostrum fugit culpa dicta saepe illum modi facere quam ab laboriosam voluptatum praesentium eligendi alias! Quod, iure?</p>
+
+    <audio src="midia/Cool Revenge - Jeremy Blake.mp3" controls ></audio>
+    <h2>Reproduzindo aúdio de outro modo</h2>
+<!-- preload pode ser none, metadata e auto;  -->
+    <audio preload="metadata" controls>
+        <source src="midia/Tubby - Steve Adams.mp3" type="audio/mpeg">
+        <source src="midia/Tubby - Steve Adams.ogg" type="audio/ogg">
+        <source src="midia/Tubby - Steve Adams.wav" type="audio/wav">
+    </audio>
+</body>
+</html>
